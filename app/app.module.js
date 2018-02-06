@@ -8,26 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var events_app_component_1 = require('./events-app.component');
-var events_list_component_1 = require('./events/events-list.component');
-var event_thumbnail_component_1 = require('./events/event-thumbnail.component');
-var navbar_component_1 = require('./nav/navbar.component');
-var event_service_1 = require('./events/shared/event.service');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var events_app_component_1 = require("./events-app.component");
+var events_list_component_1 = require("./events/events-list.component");
+var event_thumbnail_component_1 = require("./events/event-thumbnail.component");
+var navbar_component_1 = require("./nav/navbar.component");
+var event_service_1 = require("./events/shared/event.service");
+var toastr_service_1 = require("./common/toastr.service");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [events_app_component_1.EventsAppComponent, events_list_component_1.EventsListComponent, event_thumbnail_component_1.EventThumbnailComponent, navbar_component_1.NavBarComponent],
-            providers: [event_service_1.EventService],
-            bootstrap: [events_app_component_1.EventsAppComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        declarations: [events_app_component_1.EventsAppComponent, events_list_component_1.EventsListComponent, event_thumbnail_component_1.EventThumbnailComponent, navbar_component_1.NavBarComponent],
+        providers: [event_service_1.EventService, toastr_service_1.ToastrService],
+        bootstrap: [events_app_component_1.EventsAppComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var NavBarComponent = (function () {
     function NavBarComponent() {
     }
-    NavBarComponent = __decorate([
-        core_1.Component({
-            selector: 'nav-bar',
-            templateUrl: 'app/nav/navbar.component.html',
-            styles: ["\n        .nav.navbar-nav { font-size: 15px; }\n        #searchForm { margin-right: 50px; }\n        @media (max-width: 1100px) { #searchForm {display:none} }\n    "]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], NavBarComponent);
     return NavBarComponent;
 }());
+NavBarComponent = __decorate([
+    core_1.Component({
+        selector: 'nav-bar',
+        templateUrl: 'app/nav/navbar.component.html',
+        styles: ["\n        .nav.navbar-nav { font-size: 15px; }\n        #searchForm { margin-right: 50px; }\n        @media (max-width: 1100px) { #searchForm {display:none} }\n    "]
+    }),
+    __metadata("design:paramtypes", [])
+], NavBarComponent);
 exports.NavBarComponent = NavBarComponent;
 //# sourceMappingURL=navbar.component.js.map
